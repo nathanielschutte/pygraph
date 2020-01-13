@@ -1,7 +1,7 @@
 import graph
 
 # test using random graphs
-def randomTest(n):
+def testRandom(n):
     myGraph = graph.GraphList(n)
     myGraph.randomGraph()
 
@@ -15,7 +15,7 @@ def randomTest(n):
     print("Percent diff: %.2f%%" % ((bst - prim) / prim * 100))
 
 # test using graph from file
-def graphListTest():
+def testGraphList():
     myGraph = graph.GraphList(1)
     myGraph.readGraph("test_graph.txt")
     myGraph.printGraph()
@@ -26,7 +26,8 @@ def graphListTest():
 
 
 if __name__ == "__main__":
-    graphListTest()
-    randomTest(4)
+    # testGraphList()
+    testRandom(4)
+
 
 
